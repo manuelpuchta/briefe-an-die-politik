@@ -235,10 +235,16 @@ main {
   font-size: 0.8125rem;
   line-height: 1.4;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   border-radius: 1rem;
   background-color: #ffffff;
+}
+
+textarea {
+  display: block;
+  width: calc(100% - 2rem);
+  height: 12.5rem;
 }
 
 .imprint {
