@@ -94,8 +94,10 @@
           Du möchtest deine*n Abgeordnete*n lieber selbst kontaktieren? <br />
           Die E-Mailadressen der Abgeordneten lassen sich nicht so leicht im Internet aufspüren. Grundsätzlich folgen sie aber dem Prinzip vorname.nachname@bundestag.de. <br />
           <br />
-          <small>Kleiner Tipp für längere Namen: Doppelnamen werden meist folgendermaßen konvertiert: "Vorname1-Vorname2 Von der Nachname" wird zu vorname1-vorname2.vondernachname@bundestag.de, "Vorname Nachname1-Nachname2 wird zu
-          vorname.nachname1-nachname2@bundestag.de)</small>
+          <small>
+            Kleiner Tipp für längere Namen: Doppelnamen werden meist folgendermaßen konvertiert: "Vorname1-Vorname2 Von der Nachname" wird zu vorname1-vorname2.vondernachname@bundestag.de, "Vorname Nachname1-Nachname2 wird zu
+            vorname.nachname1-nachname2@bundestag.de)
+          </small>
           <br />
         </p>
       </section>
@@ -129,7 +131,8 @@ Dein Name
 
 ¹ https://www.datawrapper.de/_/ClE1N/
 ² https://www.akweb.de/reihe/corona-bei-der-arbeit/
-³ https://projekte.uni-erfurt.de/cosmo2020/web/summary/41/</textarea>
+³ https://projekte.uni-erfurt.de/cosmo2020/web/summary/41/
+        </textarea>
 
         <a class="button" id="copy">Text kopieren</a>
       </section>
@@ -159,10 +162,10 @@ Dein Name
       const content = document.getElementById("letter");
       const copy = document.getElementById("copy");
 
-      copy.addEventListener( 'click', () => {
+      copy.addEventListener("click", () => {
         content.select();
-        document.execCommand('copy');
-        alert('Text wurde kopiert!');
+        document.execCommand("copy");
+        alert("Text wurde kopiert!");
       });
     </script>
   </body>
