@@ -114,7 +114,8 @@ a {
   color: #376dff;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   background-color: #ff66ff;
   color: #fff;
 }
@@ -134,7 +135,8 @@ a:hover, a:active {
   cursor: pointer;
 }
 
-.button:hover, .button:active {
+.button:hover,
+.button:active {
   background-color: inherit;
   color: inherit;
 }
@@ -237,13 +239,6 @@ main {
   margin-bottom: 1.25rem;
   border-radius: 1rem;
   background-color: #ffffff;
-}
-
-@media (min-width: 30rem) {
-  /* .text {
-    padding: 4.375rem;
-    border-radius: 1.25rem;
-  } */
 }
 
 .imprint {
