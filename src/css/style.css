@@ -38,8 +38,10 @@ body {
   letter-spacing: 0.0625rem;
   line-height: 1.3;
   background: linear-gradient(70deg, #fff3ff, #ffffeb);
+  word-wrap: break-word;
 }
 
+/* typo */
 h1,
 h3,
 h4 {
@@ -47,33 +49,110 @@ h4 {
   font-weight: 800;
   line-height: 1em;
   color: #ff37ff;
-  word-wrap: break-word;
 }
 
 h1 {
-  font-size: 2.0346666667rem;
-  padding: 0.625rem 0;
+  font-size: 2.034666666666667rem;
+  padding-bottom: 1.25rem;
 }
 
 @media (min-width: 30rem) {
   h1 {
     font-size: 3.052rem;
-    padding: 1.25rem 0;
   }
 }
 
 h2 {
-  font-size: 2.441rem;
+  font-size: 1.6273333333333333rem;
   font-weight: 100;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  color: #ba09e6;
 }
 
 @media (min-width: 30rem) {
   h2 {
     font-size: 2.441rem;
-    padding: 20px 0 20px 0;
   }
 }
 
+h3 {
+  font-size: 1.302rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 30rem) {
+  h3 {
+    font-size: 1.953rem;
+  }
+}
+
+h4 {
+  font-size: 1.042rem;
+}
+
+@media (min-width: 30rem) {
+  h4 {
+    font-size: 1.563rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+  padding-bottom: 0.6666666667rem;
+  color: #5c007d;
+}
+
+p.big {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+a {
+  font-family: "Courier New", monospace;
+  color: #376dff;
+}
+
+a:hover, a:active {
+  background-color: #ff66ff;
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  font-size: 0.9375rem;
+  margin: 0;
+  padding: 0.5rem 0.9375rem;
+  border: 0.3125rem solid #ffff17;
+  border-radius: 0.75rem;
+  color: #376dff;
+  background-color: white;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover, .button:active {
+  background-color: inherit;
+  color: inherit;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 30rem) {
+  ol {
+    padding-left: 2.5rem;
+  }
+}
+
+/* page layout */
 header {
   background: linear-gradient(70deg, #ffff41, #ff66ff);
 }
@@ -90,201 +169,130 @@ header a {
 }
 
 main {
-  width: 80%;
   margin: 0 auto;
+  padding: 2.0833333333rem 0;
 }
 
 @media (min-width: 30rem) {
   main {
-    width: 60%;
+    width: 80%;
+    padding-top: 3.125rem;
   }
 }
 
-.intro {
+@media (min-width: 45rem) {
+  main {
+    width: 60%;
+    max-width: 50rem;
+    padding-top: 5rem;
+  }
+}
+
+.option {
+  border-radius: 0.8333333333rem;
+  border: 0.0625rem solid #ff37ff;
+  padding: 0.8333333333rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
+
+@media (min-width: 30rem) {
+  .option {
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+  }
+}
+
+.option--a {
+  border-color: #ff37ff;
+}
+
+.option--b {
+  border-color: #ba09e6;
+}
+
+.ergebnis {
+  background: #fffc89;
+  padding: 1.25rem;
+  margin: 3.125rem 0 0 0;
+}
+
+@media (min-width: 30rem) {
+  .ergebnis {
+    margin-bottom: 4.375rem;
+  }
+}
+
+.ergebnis .button {
+  border-color: #ff37ff;
+  color: black;
+}
+
+.text {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+
+@media (min-width: 30rem) {
+  /* .text {
+    padding: 4.375rem;
+    border-radius: 1.25rem;
+  } */
+}
+
+.imprint {
   margin: 0 auto;
   padding: 3.125rem 0;
 }
 
-.intro p {
+.imprint p {
   font-size: 1.125rem;
   line-height: 1.4em;
 }
 
-
-
-
-/* todo... */
-
-h3 {
-  font-size: 1.953rem;
+footer {
+  margin: 0 auto;
+  padding-bottom: 4rem;
 }
 
-h4 {
-  font-size: 1.563rem;
-}
-
-h5 {
-  font-size: 1.25rem;}
-
-
-small, .text_small {
-  font-size: 0.8rem;
-}
-
-h2 {
-  text-align: center;
-  color: #ba09e6;
-  font-size: 1.66rem;
-  margin-bottom: 0.625rem;
+footer .m-rb {
+  margin: 0 0.625rem 0.625rem 0;
+  display: inline-block;
 }
 
 @media (min-width: 30rem) {
-  h2 {
-    font-size: 40px;
-    margin-bottom: 1.25rem;
+  footer {
+    width: 80%;
   }
 }
 
+@media (min-width: 45rem) {
+  footer {
+    width: 60%;
+    max-width: 50rem;
+  }
+}
 
-
+/* helpers */
+.space {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 
 .lila {
   color: #ba09e6;
 }
 
-
-
-h3 {
-  /* font-size: 30px; */
-  padding: 10px 0;
-}
-
-@media (min-width: 30rem) {
-  h3 {
-    font-size: 40px;
-    margin: 0 0 20px 0;
-  }
-}
-
-
-h4 {
-  /* font-size: 24px; */
-  padding: 0 0 15px 0;
-}
-
-@media (min-width: 30rem) {
-  h4 {
-    font-size: 40px;
-    margin: 0 0 20px 0;
-  }
-}
-
-a {
-  font-family: "Courier New", monospace;
-  color: #376dff;
-}
-
-a:hover {
-  background-color: #ff66ff;
-  color: #fff;
-}
-
-p {
-  padding-bottom: 5px;
-  color: #5c007d;
-
-  word-wrap: break-word;
-}
-
-ol {
+.line {
   display: block;
-  list-style-type: decimal;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px;
-}
-
-hr {
   width: 100%;
-  height: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  height: 0.0625rem;
+  margin: 2rem 0;
   background-color: #ff66ff;
-  border: none;
-}
-
-button {
-  background-color: white;
-  border: 5px solid #ffff17;
-  color: #376dff;
-  padding: 8px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "Courier New", monospace;
-  font-size: 15px;
-  border-radius: 12px;
-  cursor: pointer;
-  margin: 0;
-}
-
-
-
-
-.option-a {
-  border-radius: 20px;
-  border: 1px solid #ff37ff;
-  padding: 20px;
-  margin: 0 0 20px 0;
-}
-
-.option {
-  border-radius: 20px;
-  border: 1px solid #ba09e6;
-  padding: 20px;
-  margin: 0 0 20px 0;
-}
-
-.ergebnis {
-  background: #fffc89;
-  padding: 20px;
-  margin: 50px 0 70px 0;
-}
-
-.text {
-  font-size: 13px;
-  line-height: 1.4em;
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-
-  word-wrap: break-word;
-}
-
-@media (min-width: 30rem) {
-  .text {
-    padding: 70px;
-  }
-}
-
-footer {
-  width: 60%;
-  margin: 0 auto;
-  padding-bottom: 10px;
-}
-
-.links {
-  margin-bottom: 50px;
-}
-
-.links a {
-  background-color: #ffff17;
-}
-
-.imprint {
-  font-size: 15px;
 }
