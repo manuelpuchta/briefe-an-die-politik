@@ -109,6 +109,10 @@ p.big {
   line-height: 1.4;
 }
 
+small {
+  font-size: 0.8rem;
+}
+
 a {
   font-family: "Courier New", monospace;
   color: #376dff;
@@ -244,7 +248,19 @@ main {
 textarea {
   display: block;
   width: calc(100% - 2rem);
-  height: 12.5rem;
+  height: 12rem;
+}
+
+@media (min-width: 30rem) {
+  textarea {
+    height: 16rem;
+  }
+}
+
+@media (min-width: 45rem) {
+  textarea {
+    height: 20rem;
+  }
 }
 
 .imprint {
